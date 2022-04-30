@@ -1,0 +1,23 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+}
+
+apply from: "$rootDir/gradle/script/features.gradle"
+apply from: "$rootDir/gradle/script/dependencies.gradle"
+
+dependencies {
+
+    //rxjava
+    api "io.reactivex.rxjava2:rxjava:2.2.21"
+    api "io.reactivex.rxjava2:rxandroid:2.1.1"
+
+    //retrofit
+    api "com.squareup.retrofit2:retrofit:2.9.0"
+    api 'com.squareup.retrofit2:converter-gson:2.9.0'
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+    api 'com.squareup.okhttp3:logging-interceptor:4.9.3'
+
+    // koin
+    api 'io.insert-koin:koin-android:3.1.5'
+}

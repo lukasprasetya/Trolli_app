@@ -1,0 +1,12 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+}
+
+apply from: "$rootDir/gradle/script/dependencies.gradle"
+apply from: "$rootDir/gradle/script/features.gradle"
+
+dependencies {
+    // core module
+    implementation project(":core")
+}
